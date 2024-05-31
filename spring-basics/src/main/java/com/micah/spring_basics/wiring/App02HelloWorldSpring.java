@@ -1,8 +1,6 @@
-package com.micah.spring_basics;
+package com.micah.spring_basics.wiring;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.micah.spring_basics.wiring.ConfigClass;
 
 public class App02HelloWorldSpring {
     public static void main(String[] args) {

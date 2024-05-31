@@ -1,5 +1,6 @@
 package com.micah.spring_basics.wiring;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -46,6 +47,7 @@ public class ConfigClass {
     }
 
     @Bean
+    @Qualifier("city2Qualifier")
     public Address city2(String country,String city) {
         return new Address(country,city);
     }
