@@ -1,9 +1,13 @@
 package com.micah.spring_basics.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
   private GameConsole game;
 
-  public GameRunner(GameConsole game){
+  public GameRunner(@Qualifier("PacManGameQualifier")GameConsole game){
     this.game = game;
   }
 
